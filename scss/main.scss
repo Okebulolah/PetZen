@@ -1,0 +1,97 @@
+$yellow: #fbbc05;
+$pink: #ede8e8;
+$white: #fff;
+$paytone: "Paytone One", sans-serif;
+$openSans: "Open Sans", sans-serif;
+$alata: "Alata", sans-serif;
+
+$primary: $yellow;
+$spacer: 2rem;
+
+$box-shadow-lg: 0 2rem 6rem rgba($black, 0.275);
+
+$border-radius: 1.5rem;
+
+$btn-padding-x: 1.9rem;
+$btn-padding-y: 0.65rem;
+
+.btn-primary {
+  color: $white !important;
+}
+
+.btn-light {
+  :hover {
+    background-color: none !important;
+  }
+}
+
+.navbar-brand {
+  font-family: $paytone;
+  font-weight: 600;
+  font-size: 50px !important;
+  span {
+    color: $yellow;
+  }
+}
+h1 {
+  font-family: $alata;
+  font-size: 50px !important;
+  line-height: 60px !important;
+  width: 520px;
+  span {
+    display: block;
+    font-family: $paytone;
+    color: $yellow;
+  }
+  #baixe {
+    font-family: $openSans;
+  }
+}
+
+p {
+  font-family: $openSans;
+  width: 320px;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float-animation {
+  animation: floatAnimation 2s ease-in-out infinite alternate;
+}
+
+h3 {
+  font-family: $openSans !important;
+  font-size: 36 !important;
+  font-weight: 590 !important;
+
+  span {
+    color: $yellow;
+  }
+}
+
+#small {
+  font-size: 14px !important;
+  height: 60px;
+  line-height: 20px;
+}
+
+h5 {
+  font-family: $openSans !important;
+}
+
+#lcard {
+  background-color: $pink !important;
+}
+
+//import bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
